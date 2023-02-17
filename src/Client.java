@@ -50,7 +50,7 @@ public class Client {
         }
     }
 
-    public void GUI(View) {
+    public void GUI() {
 
     }
 

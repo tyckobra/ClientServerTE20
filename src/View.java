@@ -1,28 +1,32 @@
 import javax.swing.*;
 import javax.swing.text.TextAction;
+import java.awt.*;
 import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 import java.awt.event.ComponentAdapter;
 import java.awt.event.ComponentEvent;
 
 public class View {
     private JPanel panel1;
-    private JTextField textField1;
     private JButton sendButton;
     private JTextArea textArea1;
+    private JTextField textField1;
 
-    public View() {
-        textField1.addActionListener(new TextAction() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-
-            }
-        });
-        sendButton.addActionListener(new TextAction() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                
-            }
-        });
+    public JPanel getPanel1() {
+        return panel1;
     }
 
+    public JButton getSendButton() {
+        if (getSendButton(actionPerformed)) {
+            return sendButton;
+        }
+    }
+
+    public JTextArea getTextArea1() {
+        return textArea1;
+    }
+
+    public JTextField getTextField1() {
+        return textField1;
+    }
 }

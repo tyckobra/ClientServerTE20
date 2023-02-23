@@ -17,9 +17,7 @@ public class View {
     }
 
     public JButton getSendButton() {
-        if (getSendButton(actionPerformed)) {
             return sendButton;
-        }
     }
 
     public JTextArea getTextArea1() {

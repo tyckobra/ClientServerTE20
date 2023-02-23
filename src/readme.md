@@ -20,3 +20,7 @@ fatta vad som händer.
 Det är svårt att veta vart
 saker ska skrivas, om det är Modellen, Viewen eller
 Controllern.
+
+23-02-23
+Idag följde jag instruktionerna på classroom och skapade
+en ikon. Jobbade sedan vidare lite på Controllern

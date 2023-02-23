@@ -1,7 +1,10 @@
+import javax.imageio.ImageIO;
 import javax.swing.*;
+import javax.swing.text.JTextComponent;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.io.IOException;
 
 public class Controller {
     private Model m;
@@ -19,16 +22,34 @@ public class Controller {
         frame.setSize(400, 300);
         frame.setVisible(true);
 
-        ActionListener A = new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                v.getSendButton(actionPerformed(true));
-            }
-        };
+        JTextField textField = new JTextField();
+        textField.getText();
+        v.getTextField1();
+
+        JTextArea textArea = new JTextArea();
+        textArea.add(textArea);
+        v.getTextArea1();
+
+        JButton button = new JButton();
+        button.addActionListener();
+        v.getSendButton();
+
+        ClassLoader cl = this.getClass().getClassLoader();
+        ImageIcon icon = null;
+        try {
+            icon = new ImageIcon(ImageIO.read(cl.getResource("skull.jfif")));
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
+        frame.setIconImage(icon.getImage());
+
     }
 
 
     public static void main(String[] args) {
         Controller c = new Controller(new Model(), new View());
+
+
     }
 }

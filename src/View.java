@@ -16,9 +16,7 @@ public class View {
         return panel1;
     }
 
-    public JButton getSendButton() {
-            return sendButton;
-    }
+    public JButton getSendButton() {return sendButton; }
 
     public JTextArea getTextArea1() {
         return textArea1;

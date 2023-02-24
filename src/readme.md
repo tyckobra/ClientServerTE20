@@ -24,3 +24,10 @@ Controllern.
 23-02-23
 Idag följde jag instruktionerna på classroom och skapade
 en ikon. Jobbade sedan vidare lite på Controllern
+
+23-02-24
+Idag har jag fösökt att jobba på modellen och
+göra så att när send klickas så ska texten i 
+textfield skrivas ut i textArea men jag har i
+princip ingen aning hur man gör så jag har försökt
+att skiva så att min tanke ändå går att förstå.

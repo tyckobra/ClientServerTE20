@@ -22,16 +22,10 @@ public class Controller {
         frame.setSize(400, 300);
         frame.setVisible(true);
 
-        JTextField textField = new JTextField();
-        textField.getText();
         v.getTextField1();
 
-        JTextArea textArea = new JTextArea();
-        textArea.add(textArea);
         v.getTextArea1();
 
-        JButton button = new JButton();
-        button.addActionListener();
         v.getSendButton();
 
         ClassLoader cl = this.getClass().getClassLoader();
@@ -49,7 +43,6 @@ public class Controller {
 
     public static void main(String[] args) {
         Controller c = new Controller(new Model(), new View());
-
 
     }
 }

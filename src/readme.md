@@ -31,3 +31,7 @@ göra så att när send klickas så ska texten i
 textfield skrivas ut i textArea men jag har i
 princip ingen aning hur man gör så jag har försökt
 att skiva så att min tanke ändå går att förstå.
+
+23-03-03
+Idag har jag inte gjort så mycket, lyssnade
+på din feedback.

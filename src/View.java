@@ -12,6 +12,8 @@ public class View {
     private JTextArea textArea1;
     private JTextField textField1;
 
+
+
     public JPanel getPanel1() {
         return panel1;
     }

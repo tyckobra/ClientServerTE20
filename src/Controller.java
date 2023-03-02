@@ -6,7 +6,10 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.io.IOException;
 
+//NÄR SKA DET GÖRAS??
+
 public class Controller {
+    private final Object ActionListener;
     private Model m;
     private View v;
 
@@ -22,11 +25,18 @@ public class Controller {
         frame.setSize(400, 300);
         frame.setVisible(true);
 
+        ActionListener = new ActionListener(View.getTextArea1()) {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+
+            }
+        };
+
         v.getTextField1();
 
-        v.getTextArea1();
-
         v.getSendButton();
+
+
 
         ClassLoader cl = this.getClass().getClassLoader();
         ImageIcon icon = null;
@@ -41,8 +51,9 @@ public class Controller {
     }
 
 
-    public static void main(String[] args) {
-        Controller c = new Controller(new Model(), new View());
-
+    public static void main(String[] args) throws IOException {
+        Model m = new Model();
+        View v = new View();
+        Controller c = new Controller(m,v);
     }
 }

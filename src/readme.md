@@ -26,7 +26,7 @@ Idag följde jag instruktionerna på classroom och skapade
 en ikon. Jobbade sedan vidare lite på Controllern
 
 23-02-24
-Idag har jag fösökt att jobba på modellen och
+Idag har jag försökt att jobba på modellen och
 göra så att när send klickas så ska texten i 
 textfield skrivas ut i textArea men jag har i
 princip ingen aning hur man gör så jag har försökt
@@ -35,3 +35,10 @@ att skiva så att min tanke ändå går att förstå.
 23-03-03
 Idag har jag inte gjort så mycket, lyssnade
 på din feedback.
+
+23-03-03 SISTA LEKTIONEN
+Jag har arbetat med Actionlisterners och
+experimenterat och försökt förbättra min kod
+vet inte om det blev bättre men. Jag lyckades
+få bort alla röda markeringar i alla fall vilket
+gör mig lite nöjd ändå.

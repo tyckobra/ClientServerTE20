@@ -9,7 +9,6 @@ import java.io.IOException;
 //NÄR SKA DET GÖRAS??
 
 public class Controller {
-    private final Object ActionListener;
     private Model m;
     private View v;
 
@@ -19,22 +18,11 @@ public class Controller {
 
         JFrame frame = new JFrame();
         frame.setTitle("ClientServerTE20");
-        frame.setContentPane(v.getPanel1());
+        frame.setContentPane(v.getPanel());
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.pack();
         frame.setSize(400, 300);
         frame.setVisible(true);
-
-        ActionListener = new ActionListener(View.getTextArea1()) {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-
-            }
-        };
-
-        v.getTextField1();
-
-        v.getSendButton();
 
 
 
@@ -55,5 +43,7 @@ public class Controller {
         Model m = new Model();
         View v = new View();
         Controller c = new Controller(m,v);
+        m.getPrint();
+        m.getServer();
     }
 }

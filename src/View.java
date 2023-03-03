@@ -7,24 +7,41 @@ import java.awt.event.ComponentAdapter;
 import java.awt.event.ComponentEvent;
 
 public class View {
-    private JPanel panel1;
-    private JButton sendButton;
-    private JTextArea textArea1;
-    private JTextField textField1;
+        private JPanel panel;
+        private JButton sendButton;
+        private JTextArea textArea;
+        private JTextField textField;
+
+        public JPanel getPanel () {
+            return panel;
+        }
+
+        public JButton getSendButton () {
+            return sendButton;
+        }
+
+        public JTextArea getTextArea () {
+            return textArea;
+        }
+
+        public JTextField getTextField () {
+            return textField;
+        }
 
 
+            ActionListener SendButton = new ActionListener() {
+                @Override
+                public void actionPerformed(ActionEvent e) {
+                    getSendButton().addActionListener(SendButton);
+                }
+            };
 
-    public JPanel getPanel1() {
-        return panel1;
-    }
+            ActionListener text = new ActionListener() {
+                @Override
+                public void actionPerformed(ActionEvent e) {
+                    textField.setText(textArea.getText());
+                    text.toString();
+                }
+            };
 
-    public JButton getSendButton() {return sendButton; }
-
-    public JTextArea getTextArea1() {
-        return textArea1;
-    }
-
-    public JTextField getTextField1() {
-        return textField1;
-    }
 }
